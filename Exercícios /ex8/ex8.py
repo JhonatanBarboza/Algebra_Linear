@@ -38,10 +38,6 @@ print("\n" + "="*50 + "\n")
 # 2. Aplicar SVD
 U, S, VT = svd(R_filled, full_matrices=False)
 
-print("Valores singulares:")
-print(S)
-print("\n" + "="*50 + "\n")
-
 # 3. Reconstruir com k=3 componentes principais
 k = 3
 S_k = np.diag(S[:k])
